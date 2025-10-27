@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>بروفايلاتي – Abdelsabour Ahmed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #EBEBDC;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #28694B;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 28px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 600px;
+      width: 100%;
+    }
+    .profile-card {
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #28694B;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+    .profile-card:hover {
+      background-color: #FF5F2D;
+      transform: translateY(-4px);
+    }
+    @media (max-width: 500px) {
+      .container { grid-template-columns: 1fr; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>ابحث عني على منصات العمل الحر</h1>
+  <div class="container">
+    <a href="https://www.freelancer.com/u/Abdelsabour" class="profile-card" target="_blank">Freelancer</a>
+    <a href="https://mostaql.com/u/Abdelsabour" class="profile-card" target="_blank">مستقل</a>
+    <a href="https://nafezly.com/u/abdelsabour" class="profile-card" target="_blank">نافذلي</a>
+    <a href="https://www.fiverr.com/users/abdelsabour_a/seller_dashboard" class="profile-card" target="_blank">Fiverr</a>
+  </div>
+</body>
+</html>
